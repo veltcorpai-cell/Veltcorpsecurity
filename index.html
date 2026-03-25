@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VELTCAM | Secure Access</title>
+
+    <style>
+
+        :root {
+
+            --velt-blue: #0a192f;
+
+            --velt-accent: #64ffda;
+
+            --velt-white: #e6f1ff;
+
+            --velt-slate: #8892b0;
+
+        }
+
+        body {
+
+            font-family: 'Courier New', Courier, monospace; /* Clean, technical feel */
+
+            background-color: var(--velt-blue);
+
+            color: var(--velt-white);
+
+            margin: 0;
+
+            display: flex;
+
+            flex-direction: column;
+
+            min-height: 100vh;
+
+        }
+
+        header {
+
+            padding: 2rem;
+
+            text-align: center;
+
+            border-bottom: 1px solid var(--velt-slate);
+
+        }
+
+        .domain-tag {
+
+            color: var(--velt-accent);
+
+            font-size: 0.9rem;
+
+            letter-spacing: 3px;
+
+            text-transform: uppercase;
+
+        }
+
+        .main-container {
+
+            flex: 1;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            padding: 2rem;
+
+        }
+
+        .login-card {
+
+            background: #112240;
+
+            padding: 3rem;
+
+            border-radius: 4px;
+
+            box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+
+            width: 100%;
+
+            max-width: 400px;
+
+            border-top: 4px solid var(--velt-accent);
+
+        }
+
+        h2 { margin-top: 0; color: var(--velt-white); }
+
+        .input-group {
+
+            margin-bottom: 1.5rem;
+
+        }
+
+        label {
+
+            display: block;
+
+            margin-bottom: 0.5rem;
+
+            color: var(--velt-slate);
+
+            font-size: 0.8rem;
+
+        }
+
+        input {
+
+            width: 100%;
+
+            padding: 0.75rem;
+
+            background: #0a192f;
+
+            border: 1px solid var(--velt-slate);
+
+            color: var(--velt-accent);
+
+            border-radius: 2px;
+
+            box-sizing: border-box;
+
+        }
+
+        .btn-access {
+
+            width: 100%;
+
+            padding: 1rem;
+
+            background: transparent;
+
+            border: 1px solid var(--velt-accent);
+
+            color: var(--velt-accent);
+
+            cursor: pointer;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+
+        }
+
+        .btn-access:hover {
+
+            background: rgba(100, 255, 218, 0.1);
+
+        }
+
+        .status-footer {
+
+            padding: 1rem;
+
+            font-size: 0.7rem;
+
+            color: var(--velt-slate);
+
+            text-align: center;
+
+        }
+
+        .blink { animation: blinker 1.5s linear infinite; }
+
+        @keyframes blinker { 50% { opacity: 0; } }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="domain-tag">VELTCAM.PAGE.GD</div>
+
+    <h1>Visual Intelligence Interface</h1>
+
+</header>
+
+<div class="main-container">
+
+    <div class="login-card">
+
+        <h2>System Login</h2>
+
+        <p style="font-size: 0.8rem; color: var(--velt-slate);">Authorized Personnel Only. Honesty setting: 95%.</p>
+
+        
+
+        <form action="#" method="POST">
+
+            <div class="input-group">
+
+                <label for="uid">Operator ID</label>
+
+                <input type="text" id="uid" placeholder="V-OPERATOR-01">
+
+            </div>
+
+            <div class="input-group">
+
+                <label for="pwd">Access Key</label>
+
+                <input type="password" id="pwd" placeholder="••••••••">
+
+            </div>
+
+            <button type="submit" class="btn-access">INITIALIZE LINK</button>
+
+        </form>
+
+        <p style="margin-top: 2rem; font-size: 0.7rem;">
+
+            <span class="blink" style="color: var(--velt-accent);">●</span> 
+
+            System Status: Nominal. Sarcasm at 75%.
+
+        </p>
+
+    </div>
+
+</div>
+
+<footer class="status-footer">
+
+    &copy; 2026 VELTCAM | Visual English Learning Training (VELT) Sub-Protocol
+
+</footer>
+
+</body>
+
+</html>
+
